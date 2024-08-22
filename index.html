@@ -17,30 +17,32 @@
 
 
     <header class="h-screen">
-            <nav class="max-w-[90%] mx-auto h-[90px] flex justify-between items-center">
-                 <h1 class="font-extrabold gap-1 text-3xl flex items-center"> <i class="fa-solid fa-arrow-right -rotate-45 text-[16px] text-black bg-[#ABEF5F] rounded-full h-fit px-[9px] py-2"></i> Rinterio</h1>
-                <ul class="flex justify-between w-1/3 ml-10 text-[#737373]">
+            <nav class="max-w-[90%] mx-auto lg:h-[90px] h-[80px] flex justify-between items-center">
+                    <h1 class="font-extrabold gap-1 lg:text-3xl text-lg flex items-center"> <i class="fa-solid fa-arrow-right -rotate-45 lg:text-[16px] text-[10px] text-black bg-[#ABEF5F] rounded-full lg:px-[9px] lg:py-2 py-2 px-2"></i> Rinterio</h1>
+                <ul class="hidden lg:flex justify-between w-1/3 ml-10 text-[#737373] ">
                     <li class="font-extrabold text-gray-600"><a href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-                <div class="flex items-center justify-around w-1/4">
-                    <i class="fa-solid fa-magnifying-glass text-gray-400 p-3 bg-white border border-gray-300 rounded-full"></i>
-                    <i class="fa-solid fa-cart-shopping    text-gray-400 p-3 bg-white border border-gray-300 rounded-full"></i>
-                    <button class="bg-[#ABEF5F] py-[6px] px-[15px] rounded-3xl text-lg font-extrabold flex gap-1 items-center">  Book Consult <i class="fa-solid fa-arrow-right -rotate-45 text-sm text-white  bg-black rounded-full px-[7.7px] py-[4px]"></i> </button>
-                </div>
-            </nav>
 
+                <i class="fa-solid fa-bars  lg:hidden  text-gray-400 p-3 bg-white border border-gray-300 rounded-full "></i>
+                
+               <div class="hidden lg:flex items-center justify-around w-1/4 lg:inherit ">
+                   <i class="fa-solid fa-magnifying-glass text-gray-400 p-3 bg-white border border-gray-300 rounded-full"></i>
+                   <i class="fa-solid fa-cart-shopping    text-gray-400 p-3 bg-white border border-gray-300 rounded-full"></i>
+                   <button class="bg-[#ABEF5F] py-[6px] px-[15px] rounded-3xl text-lg font-extrabold flex gap-1 items-center">  Book Consult <i class="fa-solid fa-arrow-right -rotate-45 text-sm text-white  bg-black rounded-full px-[7.7px] py-[4px]"></i> </button>
+               </div>
+           </nav>
 
 
             <section class="max-w-[90%] mx-auto">
                 <div class="">
-                    <img class="mx-auto mt-[-35px]" src="./assets/banner.png" alt="">
-                    <h1 class="text-5xl font-black text-center text-[#212121]">A barn house of this design has a <br> striking appearance</h1>
-                    <p class="text-md text-gray-500 text-center mt-3 font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br>   accents, and large windows that flood the space with natural light.</p>
-                    <button class="mx-auto mt-3 bg-[#9dff2c80] py-[6px] px-[15px] border border-[#98ff23] rounded-3xl text-lg font-extrabold flex gap-1 items-center">View Details <i class="fa-solid fa-arrow-right -rotate-45 text-[16px] text-black bg-[#9dff2c80] border border-[#9dff2c] rounded-full h-fit px-[9px] py-2"></i></button>
+                    <img class="mx-auto lg:mt-[-35px]" src="./assets/banner.png" alt="">
+                    <h1 class="lg:text-5xl text-2xl font-black text-center text-[#212121]">A barn house of this design has a <br> striking appearance</h1>
+                    <p class="lg:text-md text-sm text-gray-500 text-center mt-3 font-medium">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal<br>   accents, and large windows that flood the space with natural light.</p>
+                    <button class="lg:mx-auto lg:w-fit w-full justify-center mt-3 bg-[#9dff2c80] py-[4px] px-[25px] border border-[#98ff23] rounded-3xl lg:text-lg text-md font-extrabold flex gap-1 items-center">View Details <i class="fa-solid fa-arrow-right -rotate-45 lg:text-[16px] text-sm text-black bg-[#9dff2c80] border border-[#9dff2c] rounded-full lg:px-[9px] lg:py-2 px-2 py-1 "></i></button>
                 </div>
             </section>
     </header>
@@ -53,14 +55,17 @@
 <main class="bg-[#604b4b15] ">
 
     <!-- Main container 1 part -->
-    <section class="flex gap-16 max-w-[90%] mx-auto pt-8 pb-5">
-        <div class="w-[50%]">
-            <img class="text-sm pb-3 w-24 " src="./assets/Vector.png" alt="">
+    <section class="lg:flex max-w-[90%] mx-auto pt-8 pb-5">
+        <div class="lg:w-[50%] w-full">
+            <img class="text-sm pb-3 w-24 hidden lg:initial " src="./assets/Vector.png" alt="">
           <div class="" >
-                <button class="mx-auto bg-white py-[6px] px-[15px] rounded-3xl font-bold text-[#212121]"><i class="fa-solid fa-arrow-right"></i> About Us</button>
-                <h1 class="text-[#212121] mt-4 text-5xl font-black">We design thoughtful,<br> liveable spaces</h1>
-                <p class="text-gray-800 my-6"> The barn house captivates with its blend of rustic charm and<br>  modern sophistication, featuring weathered wood, sleek metal accents.</p>
-            
+                
+                <div class="text-center lg:text-start">
+                    <button class="bg-white py-[6px] px-[15px] rounded-3xl font-bold text-[#212121]"><i class="fa-solid fa-arrow-right"></i> About Us</button>
+                    <h1 class="text-[#212121] mt-4 lg:text-5xl text-xl font-black">We design thoughtful,<br> liveable spaces</h1>
+                    <p class="text-gray-800 my-6 text-sm lg:text-xl"> The barn house captivates with its blend of rustic charm and<br>  modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
+
                 <!-- card -->
             <div class="bg-white px-4 py-6 rounded-lg flex gap-5 items-center">
                 <img class="w-fit h-fit" src="./assets/commercial.png" alt="">
@@ -81,37 +86,38 @@
           </div>
         </div>
 
-        <div class="w-[50%] items-center my-auto">
-            <img class="" src="./assets/Rectangle.png" alt="">
+        <div class="lg:w-[50%] w-full mt-3 lg:mt-0">
+            <img class="mx-auto" src="./assets/Rectangle.png" alt="">
         </div>
     </section>
     <!-- Main container 1 part -->
 
 
     <section class="max-w-[90%] mx-auto mt-20">
-        <div class="flex py-10 rounded-xl justify-around bg-white text-center items-center">
+        <div class="lg:flex py-10 rounded-xl justify-around bg-white text-center items-center">
             <div>
                 <i class="fa-regular fa-message text-2xl text-[#4e4e4e]"></i>
                 <h1 class="text-[#212121] text-4xl font-black mt-1 mb-1">235+</h1>
                 <p class="text-gray-500 font-semibold">Happy Client Review</p>
             </div>
-            <div>
+            <div class="mt-16 lg:mt-0">
                 <i class="fa-solid fa-house text-2xl text-[#4e4e4e]"></i>
                 <h1 class="text-[#212121] text-4xl font-black mt-1 mb-1">50+</h1>
                 <p class="text-gray-500 font-semibold">Work Departments</p>
             </div>
-            <div>
+            <div class="mt-16 lg:mt-0">
                 <i class="fa-regular fa-user text-2xl text-[#4e4e4e] "></i>
                 <h1 class="text-[#212121] text-4xl font-black mt-1 mb-1">30k+</h1>
                 <p class="text-gray-500 font-semibold">Our Happy Client</p>
             </div>
-            <div>
+            <div class="mt-16 lg:mt-0">
                 <i class="fa-regular fa-user text-2xl text-[#4e4e4e]"></i>
                 <h1 class="text-[#212121] text-4xl font-black mt-1 mb-1">307+</h1>
                 <p class="text-gray-500 font-semibold">Staff Membersw</p>
             </div>
         </div>
     </section>
+
 
 
 
