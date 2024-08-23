@@ -5,3 +5,8 @@
 .initial{
     display: initial;
 }
+
+.g{
+    display: grid;
+    
+}
