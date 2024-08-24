@@ -1,12 +1,6 @@
 .com_font{
     font-family: "Manrope", sans-serif;
 }
-
-.initial{
-    display: initial;
-}
-
-.g{
-    display: grid;
-    
+.input_bg{
+    background: url(./assets/bg.jpg);
 }
